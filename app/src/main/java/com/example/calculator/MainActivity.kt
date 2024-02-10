@@ -70,7 +70,7 @@ fun Changer() {
             fontWeight = FontWeight.Bold,
             fontSize = 30.sp
         )
-        Spacer(modifier = Modifier.height(20.dp))
+        Spacer(modifier = Modifier.height(30.dp))
         EditDegrees(label = R.string.input_degrees, value = inputText, onChange = {inputText=it})
         Spacer(modifier = Modifier.height(20.dp))
         Text(
