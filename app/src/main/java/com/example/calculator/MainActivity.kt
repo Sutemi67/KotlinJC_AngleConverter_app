@@ -20,7 +20,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colors.background
                 ) {
-                    Solver().Changer()
+                    Changer()
                 }
             }
         }
@@ -31,6 +31,6 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun DefaultPreview() {
     CalculatorTheme {
-        Solver().Changer()
+        Changer()
     }
 }
