@@ -54,10 +54,10 @@ fun Changer() {
     ) {
         Text(
             text = "Degrees calculator",
+            modifier = Modifier.padding(50.dp),
             fontWeight = FontWeight.Bold,
             fontSize = 30.sp
         )
-        Spacer(modifier = Modifier.height(30.dp))
         EditDegrees(
             label = R.string.input_degrees,
             value = inputText,
@@ -107,7 +107,7 @@ fun EditDegrees(
     )
 }
 
-@Preview(showBackground = true, showSystemUi = true)
+@Preview(showBackground = true)
 @Composable
 fun VE() {
     CalculatorTheme {
