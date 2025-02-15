@@ -88,7 +88,7 @@ fun Changer() {
 }
 
 @Composable
-fun EditDegrees(
+private fun EditDegrees(
     @StringRes label: Int,
     value: String,
     onChange: (String) -> Unit
