@@ -105,9 +105,8 @@ fun Changer() {
                 )
             )
             Spacer(modifier = Modifier.height(20.dp))
-
-            ResultLine(stringResource(id = R.string.radian, radianCalc))
             ResultLine(stringResource(id = R.string.minutes, roundDeg, roundMin, roundSec))
+            ResultLine(stringResource(id = R.string.radian, radianCalc))
             ResultLine(stringResource(id = R.string.grad, roundGrad))
         }
     }
