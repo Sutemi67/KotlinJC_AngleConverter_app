@@ -1,11 +1,13 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+    alias(libs.plugins.compose.compiler)
+
 }
 
 android {
     namespace 'com.example.calculator'
-    compileSdk 35
+    compileSdk 36
 
     defaultConfig {
         applicationId "com.example.calculator"
@@ -61,7 +63,4 @@ dependencies {
     androidTestImplementation libs.androidx.ui.test.junit4
     debugImplementation libs.androidx.ui.tooling
     debugImplementation libs.ui.test.manifest
-
-    //ExoPlayer
-    implementation (libs.exoplayer)
 }
